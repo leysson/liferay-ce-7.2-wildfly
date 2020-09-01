@@ -1,16 +1,16 @@
 ##
-## Docker image: Liferay DXP -> WildFly (JBoss)
+## Docker image: Liferay 7.2.0-GA1 CE -> WildFly 11(JBoss)
 ##
-## Build: docker build -t liferay-dxp-wildfly .
-## Run: docker run -it -p 8080:8080 liferay-dxp-wildfly
+## Build: docker build -t liferay-ce-wildfly .
+## Run: docker run -it -p 8080:8080 liferay-ce-wildfly
 ##
 FROM jboss/base-jdk:8 
 
 # ENVIRONMENT
-ENV WILDFLY_VERSION		"10.1.0.Final"
+ENV WILDFLY_VERSION		"11.0.0.Final"
 ENV WILDFLY_SHA1		"9ee3c0255e2e6007d502223916cefad2a1a5e333"
-ENV LIFERAY_VERSION		"7.0.2 GA3"
-ENV LIFERAY_VERSION_FULL	"7.0-ga3-20160804222206210"
+ENV LIFERAY_VERSION		"7.2.0 GA1"
+ENV LIFERAY_VERSION_FULL	"7.2.0-ga1-20190531153709761"
 ENV LIFERAY_WAR_SHA1		"3a1a8cd8b5e31c3bdd8c433c6330e8a3cff46251"
 ENV LIFERAY_OSGI_SHA1		"f542dcb943cbb5996879b781592ef2545f13b424"
 ENV LIFERAY_DEPS_SHA1		"22c0d1bd47c5945bd1a365b0e0bec31885dfd97d"
